@@ -1,0 +1,15 @@
+{
+  "name": "hudy-sdk-examples",
+  "private": true,
+  "scripts": {
+    "basic": "ts-node basic-usage.ts"
+  },
+  "dependencies": {
+    "@hudy/sdk": "file:../../packages/typescript"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.3.0"
+  }
+}

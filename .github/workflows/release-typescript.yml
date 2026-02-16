@@ -1,0 +1,48 @@
+name: Release TypeScript SDK
+
+on:
+  push:
+    tags:
+      - 'typescript-v*'
+
+jobs:
+  release:
+    name: Publish to npm
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write  # For provenance
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build TypeScript SDK
+        run: npm run build --workspace=packages/typescript
+
+      - name: Run tests
+        run: npm run test --workspace=packages/typescript
+
+      - name: Publish to npm
+        working-directory: packages/typescript
+        run: npm publish --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: TypeScript SDK ${{ github.ref }}
+          draft: false
+          prerelease: false
