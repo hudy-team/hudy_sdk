@@ -28,13 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hudy-team/hudy-sdk.git",
+    "url": "git+https://github.com/hudy-team/hudy_sdk.git",
     "directory": "packages/typescript"
   },
   "bugs": {
-    "url": "https://github.com/hudy-team/hudy-sdk/issues"
+    "url": "https://github.com/hudy-team/hudy_sdk/issues"
   },
-  "homepage": "https://github.com/hudy-team/hudy-sdk#readme",
+  "homepage": "https://github.com/hudy-team/hudy_sdk#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^29.5.0",
