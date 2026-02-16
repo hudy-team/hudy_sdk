@@ -1,4 +1,5 @@
 """Type definitions for the Hudy SDK."""
+
 from typing import Any, Dict, List, Literal, Optional, Union
 from pydantic import BaseModel, Field, field_validator
 
@@ -13,17 +14,17 @@ class Holiday(BaseModel):
     month: int = Field(..., description="Month (1-12)")
     day: int = Field(..., description="Day of month")
     day_of_week: str = Field(..., description="Day of week name")
-    type: Literal['public', 'custom'] = Field(..., description="Holiday type")
+    type: Literal["public", "custom"] = Field(..., description="Holiday type")
 
     @property
     def is_public(self) -> bool:
         """Check if this is a public holiday."""
-        return self.type == 'public'
+        return self.type == "public"
 
     @property
     def is_custom(self) -> bool:
         """Check if this is a custom holiday."""
-        return self.type == 'custom'
+        return self.type == "custom"
 
     @field_validator("date")
     @classmethod

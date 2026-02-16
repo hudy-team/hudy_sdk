@@ -1,4 +1,5 @@
 """Date utility functions."""
+
 from datetime import date, timedelta
 
 

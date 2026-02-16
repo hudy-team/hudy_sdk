@@ -64,7 +64,7 @@ jobs:
         working-directory: packages/python
         run: |
           ruff check hudy/
-          black --check hudy/
+          ruff format --check hudy/
 
       - name: Type check
         working-directory: packages/python

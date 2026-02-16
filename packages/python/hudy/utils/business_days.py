@@ -1,4 +1,5 @@
 """Business day calculation utilities."""
+
 from datetime import date
 from typing import List, Set
 
@@ -123,9 +124,7 @@ class BusinessDayCalculator:
 
         return current
 
-    def get_business_days_in_range(
-        self, from_date: date, to_date: date
-    ) -> List[date]:
+    def get_business_days_in_range(self, from_date: date, to_date: date) -> List[date]:
         """
         Get all business days in a range (inclusive).
 

@@ -1,4 +1,5 @@
 """Smart caching with year-based TTL."""
+
 import time
 from datetime import date, datetime
 from typing import Dict, List, Optional

@@ -1,4 +1,5 @@
 """Hudy API client."""
+
 import time
 from datetime import date, timedelta
 from typing import List, Optional
@@ -47,7 +48,9 @@ class HudyClient:
         # Initialize cache
         cache_enabled = self._options.cache.enabled
         custom_ttl = self._options.cache.ttl
-        self._cache: Optional[SmartCache] = SmartCache(custom_ttl=custom_ttl) if cache_enabled else None
+        self._cache: Optional[SmartCache] = (
+            SmartCache(custom_ttl=custom_ttl) if cache_enabled else None
+        )
 
     def __enter__(self) -> "HudyClient":
         """Context manager entry."""

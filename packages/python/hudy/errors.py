@@ -1,4 +1,5 @@
 """Error types for the Hudy SDK."""
+
 from enum import Enum
 from typing import Optional
 
