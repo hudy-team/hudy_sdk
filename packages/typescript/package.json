@@ -10,6 +10,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
+    "lint": "tsc --noEmit",
     "prepublishOnly": "npm run build"
   },
   "keywords": [

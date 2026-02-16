@@ -1,5 +1,4 @@
 """Type definitions for the Hudy SDK."""
-from datetime import date
 from typing import Any, Dict, List, Literal, Optional, Union
 from pydantic import BaseModel, Field, field_validator
 
