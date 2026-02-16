@@ -47,7 +47,7 @@ describe('HudyClient', () => {
 
     it('should use default baseUrl', () => {
       const client = new HudyClient({ apiKey });
-      expect((client as any).baseUrl).toBe('https://api.hudy.kr');
+      expect((client as any).baseUrl).toBe('https://api.hudy.co.kr');
     });
 
     it('should accept custom baseUrl', () => {
@@ -85,7 +85,7 @@ describe('HudyClient', () => {
       expect(holidays[0].date).toBe('2024-01-01');
       expect(holidays[0].type).toBe('public');
       expect(global.fetch).toHaveBeenCalledWith(
-        'https://api.hudy.kr/v1/holidays?year=2024',
+        'https://api.hudy.co.kr/v2/holidays?year=2024',
         expect.objectContaining({
           headers: expect.objectContaining({
             'x-api-key': apiKey,

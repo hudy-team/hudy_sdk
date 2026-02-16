@@ -82,7 +82,7 @@ class ClientOptions(BaseModel):
     """Hudy client configuration options."""
 
     api_key: str = Field(..., description="API key (must start with hd_live_)")
-    base_url: str = Field(default="https://api.hudy.kr", description="API base URL")
+    base_url: str = Field(default="https://api.hudy.co.kr", description="API base URL")
     timeout: float = Field(default=10.0, description="Request timeout in seconds")
     cache: CacheOptions = Field(default_factory=CacheOptions)
     retry: RetryOptions = Field(default_factory=RetryOptions)

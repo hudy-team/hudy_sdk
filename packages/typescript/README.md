@@ -61,7 +61,7 @@ new HudyClient(options: ClientOptions)
 
 **Options:**
 - `apiKey` (required): Your API key starting with `hd_live_`
-- `baseUrl` (optional): API base URL (default: `https://api.hudy.kr`)
+- `baseUrl` (optional): API base URL (default: `https://api.hudy.co.kr`)
 - `timeout` (optional): Request timeout in milliseconds (default: `10000`)
 - `cache` (optional): Cache configuration
   - `enabled` (boolean): Enable/disable caching (default: `true`)

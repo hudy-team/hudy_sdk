@@ -37,7 +37,7 @@ class TestHudyClient:
     def test_constructor_default_options(self):
         """Test default configuration options."""
         client = HudyClient(api_key="hd_live_test123")
-        assert client._options.base_url == "https://api.hudy.kr"
+        assert client._options.base_url == "https://api.hudy.co.kr"
         assert client._options.timeout == 10.0
         assert client._options.cache.enabled is True
         assert client._options.retry.enabled is True

@@ -28,7 +28,7 @@ class HudyClient:
 
         Args:
             api_key: API key (must start with hd_live_)
-            base_url: API base URL (default: https://api.hudy.kr)
+            base_url: API base URL (default: https://api.hudy.co.kr)
             timeout: Request timeout in seconds (default: 10.0)
             cache: Cache options dict or CacheOptions instance
             retry: Retry options dict or RetryOptions instance
@@ -88,7 +88,7 @@ class HudyClient:
                 return cached
 
         # Fetch from API
-        url = f"{self._options.base_url}/v1/holidays?year={year}"
+        url = f"{self._options.base_url}/v2/holidays?year={year}"
         holidays = self._request(url)
 
         # Store in cache

@@ -32,7 +32,7 @@ export class HudyClient {
     }
 
     this.apiKey = options.apiKey;
-    this.baseUrl = options.baseUrl || 'https://api.hudy.kr';
+    this.baseUrl = options.baseUrl || 'https://api.hudy.co.kr';
     this.timeout = options.timeout || 10000;
 
     // Initialize cache
@@ -65,7 +65,7 @@ export class HudyClient {
     }
 
     // Fetch from API
-    const url = `${this.baseUrl}/v1/holidays?year=${year}`;
+    const url = `${this.baseUrl}/v2/holidays?year=${year}`;
     const holidays = await this.request<Holiday[]>(url);
 
     // Store in cache

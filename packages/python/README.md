@@ -54,7 +54,7 @@ with HudyClient(api_key="hd_live_your_key") as client:
 ```python
 HudyClient(
     api_key: str,
-    base_url: str = "https://api.hudy.kr",
+    base_url: str = "https://api.hudy.co.kr",
     timeout: float = 10.0,
     cache: Optional[dict] = None,
     retry: Optional[dict] = None

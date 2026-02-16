@@ -58,7 +58,7 @@ export type ApiResponse<T> = ApiSuccessResponse<T> | ApiErrorResponse;
 // Client configuration
 export interface ClientOptions {
   apiKey: string;
-  baseUrl?: string;           // default: 'https://api.hudy.kr'
+  baseUrl?: string;           // default: 'https://api.hudy.co.kr'
   timeout?: number;            // default: 10000 (10s)
   cache?: CacheOptions;
   retry?: RetryOptions;
