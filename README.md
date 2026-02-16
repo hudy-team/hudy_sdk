@@ -1,10 +1,16 @@
 # Hudy SDK
 
+[![CI](https://github.com/hudy-team/hudy_sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/hudy-team/hudy_sdk/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/hudy-team/hudy_sdk/actions/workflows/codeql.yml/badge.svg)](https://github.com/hudy-team/hudy_sdk/actions/workflows/codeql.yml)
+[![npm](https://img.shields.io/npm/v/@hudy-sdk/sdk)](https://www.npmjs.com/package/@hudy-sdk/sdk)
+[![PyPI](https://img.shields.io/pypi/v/hudy-sdk)](https://pypi.org/project/hudy-sdk/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Official SDKs for the Hudy Korean Public Holiday API.
 
 ## Packages
 
-- **[@hudy/sdk](./packages/typescript)** - TypeScript/JavaScript SDK
+- **[@hudy-sdk/sdk](./packages/typescript)** - TypeScript/JavaScript SDK
 - **[hudy-sdk](./packages/python)** - Python SDK
 
 ## Features
@@ -20,11 +26,11 @@ Official SDKs for the Hudy Korean Public Holiday API.
 ### TypeScript/JavaScript
 
 ```bash
-npm install @hudy/sdk
+npm install @hudy-sdk/sdk
 ```
 
 ```typescript
-import { HudyClient } from '@hudy/sdk';
+import { HudyClient } from '@hudy-sdk/sdk';
 
 const client = new HudyClient({ apiKey: 'hd_live_...' });
 const holidays = await client.getHolidays(2024);
