@@ -2,7 +2,7 @@
 
 import time
 from datetime import date, timedelta
-from typing import List, Optional
+from typing import Any, List, Optional
 
 import httpx
 from pydantic import ValidationError
@@ -22,7 +22,7 @@ from .utils.business_days import BusinessDayCalculator
 class HudyClient:
     """Hudy Korean Public Holiday API client."""
 
-    def __init__(self, api_key: str, **kwargs: any) -> None:
+    def __init__(self, api_key: str, **kwargs: Any) -> None:
         """
         Initialize Hudy client.
 
@@ -56,7 +56,7 @@ class HudyClient:
         """Context manager entry."""
         return self
 
-    def __exit__(self, exc_type: any, exc_val: any, exc_tb: any) -> None:
+    def __exit__(self, exc_type: Any, exc_val: Any, exc_tb: Any) -> None:
         """Context manager exit."""
         self.close()
 
