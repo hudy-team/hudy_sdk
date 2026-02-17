@@ -1,8 +1,8 @@
-# @hudy/sdk
+# @hudy-sdk/sdk
 
 Official TypeScript/JavaScript SDK for the Hudy Korean Public Holiday API.
 
-[![npm version](https://badge.fury.io/js/%40hudy%2Fsdk.svg)](https://badge.fury.io/js/%40hudy%2Fsdk)
+[![npm version](https://badge.fury.io/js/%40hudy-sdk%2Fsdk.svg)](https://badge.fury.io/js/%40hudy-sdk%2Fsdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -16,17 +16,17 @@ Official TypeScript/JavaScript SDK for the Hudy Korean Public Holiday API.
 ## Installation
 
 ```bash
-npm install @hudy/sdk
+npm install @hudy-sdk/sdk
 # or
-yarn add @hudy/sdk
+yarn add @hudy-sdk/sdk
 # or
-pnpm add @hudy/sdk
+pnpm add @hudy-sdk/sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { HudyClient } from '@hudy/sdk';
+import { HudyClient } from '@hudy-sdk/sdk';
 
 const client = new HudyClient({
   apiKey: 'hd_live_your_api_key_here'
@@ -182,7 +182,7 @@ class Holiday {
 The SDK throws `HudyError` for API errors:
 
 ```typescript
-import { HudyError, ErrorCode } from '@hudy/sdk';
+import { HudyError, ErrorCode } from '@hudy-sdk/sdk';
 
 try {
   const holidays = await client.getHolidays(2024);
@@ -244,7 +244,7 @@ const client = new HudyClient({
 For offline calculation without API calls:
 
 ```typescript
-import { BusinessDayCalculator, formatDate } from '@hudy/sdk';
+import { BusinessDayCalculator, formatDate } from '@hudy-sdk/sdk';
 
 // Fetch holidays once
 const holidays = await client.getHolidays(2024);
@@ -268,5 +268,5 @@ MIT
 ## Links
 
 - [API Documentation](https://docs.hudy.kr)
-- [GitHub Repository](https://github.com/hudy-team/hudy-sdk)
-- [Report Issues](https://github.com/hudy-team/hudy-sdk/issues)
+- [GitHub Repository](https://github.com/hudy-team/hudy_sdk)
+- [Report Issues](https://github.com/hudy-team/hudy_sdk/issues)

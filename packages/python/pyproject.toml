@@ -38,10 +38,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/hudy-team/hudy-sdk"
-Documentation = "https://github.com/hudy-team/hudy-sdk/tree/main/packages/python"
-Repository = "https://github.com/hudy-team/hudy-sdk.git"
-Issues = "https://github.com/hudy-team/hudy-sdk/issues"
+Homepage = "https://github.com/hudy-team/hudy_sdk"
+Documentation = "https://github.com/hudy-team/hudy_sdk/tree/main/packages/python"
+Repository = "https://github.com/hudy-team/hudy_sdk.git"
+Issues = "https://github.com/hudy-team/hudy_sdk/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
