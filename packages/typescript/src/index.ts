@@ -1,5 +1,5 @@
 /**
- * Main entry point for @hudy/sdk
+ * Main entry point for @hudy-sdk/sdk
  *
  * This file exports the public API of the Hudy SDK.
  */
