@@ -11,6 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Python SDK
 
+## [0.1.4] - 2026-02-22
+
+### Fixed
+- API Documentation 링크를 실제 서비스 페이지(hudy.co.kr/#docs)로 변경
+
 ## [0.1.0] - 2024-XX-XX
 
 ### Added
