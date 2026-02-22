@@ -267,6 +267,6 @@ MIT
 
 ## Links
 
-- [API Documentation](https://docs.hudy.kr)
+- [API Documentation](https://www.hudy.co.kr/#docs)
 - [GitHub Repository](https://github.com/hudy-team/hudy_sdk)
 - [Report Issues](https://github.com/hudy-team/hudy_sdk/issues)
